@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+
+    .ca{
+      padding-top:150px;
+       
+     
+    }
+    .btn btn-dark{
+        margin-left:130px;
+    }
+</style>
+ 
+    <div class="ca"> 
+       <h1> Welcome to Polling Webapp!!</h1>
+    <p>Are you Ready to vote for the questions</p>
+    <a class="btn btn-dark" href = "{% url 'index' %}"> 
+        View Available Polls! </a>   
+   
+    </div>
+{% endblock %}
